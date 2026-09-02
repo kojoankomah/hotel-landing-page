@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-GH">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover peaceful rooms, thoughtful amenities, and warm coastal hospitality at Cape Breeze Boutique Hotel in Cape Coast, Ghana.">
+    <meta name="theme-color" content="#0d2d3f">
+    <meta property="og:title" content="Cape Breeze Boutique Hotel">
+    <meta property="og:description" content="A peaceful boutique stay shaped by warm Ghanaian hospitality and the rhythm of the coast.">
+    <meta property="og:type" content="website">
+    <title>Cape Breeze Boutique Hotel | Cape Coast, Ghana</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <svg class="svg-symbols" aria-hidden="true">
+      <symbol id="icon-wifi" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></symbol>
+      <symbol id="icon-dining" viewBox="0 0 24 24"><path d="M7 3v8M4 3v5a3 3 0 0 0 6 0V3M7 11v10M17 3v18M17 3c-2 2-3 5-3 8h3"/></symbol>
+      <symbol id="icon-waves" viewBox="0 0 24 24"><path d="M2 7c3-2 5 2 8 0s5 2 8 0 4 0 4 0M2 12c3-2 5 2 8 0s5 2 8 0 4 0 4 0M2 17c3-2 5 2 8 0s5 2 8 0 4 0 4 0"/></symbol>
+      <symbol id="icon-car" viewBox="0 0 24 24"><path d="M5 17h14M6 17v2M18 17v2M3 13l2-6h14l2 6v4H3zM7 13h.01M17 13h.01"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="icon-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="1"/><path d="M9 7V5h6v2M3 12h18M10 12v2h4v-2"/></symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-4 2-6 6-6s6 2 6 6M16 5a3 3 0 0 1 0 6M16 14c3 0 5 2 5 6"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2"/></symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6 3h4l2 5-3 2c2 4 4 6 8 8l2-3 5 2v4c0 1-1 2-2 2C11 22 2 13 2 5c0-1 1-2 2-2z"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2 3 6 7 .9-5 4.8 1.3 7-6.3-3.3-6.3 3.3 1.3-7-5-4.8L9 8z"/></symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Cape Breeze home">
+        <span class="brand-mark" aria-hidden="true">CB</span>
+        <span><strong>Cape Breeze</strong><small>Boutique Hotel</small></span>
+      </a>
+
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNavigation">
+        <span class="menu-icon" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav-links" id="mainNavigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="button button-small" href="#booking">Book now</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/images/hotel-exterior.png" alt="Cape Breeze hotel overlooking the Atlantic coast at sunset">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="eyebrow eyebrow-light">Welcome to Cape Breeze</p>
+          <h1 id="hero-title">Experience Cape Coast in comfort.</h1>
+          <p class="hero-copy">A peaceful boutique stay shaped by warm Ghanaian hospitality and the rhythm of the coast.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#rooms">Explore our rooms</a>
+            <a class="button button-outline-light" href="#booking">Book your stay</a>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to discover Cape Breeze"><span>Discover</span><span class="scroll-line"></span></a>
+      </section>
+
+      <section class="quick-strip" aria-label="Key hotel amenities">
+        <div class="container quick-grid">
+          <div><svg aria-hidden="true"><use href="#icon-wifi"></use></svg><span>Free Wi-Fi</span></div>
+          <div><svg aria-hidden="true"><use href="#icon-dining"></use></svg><span>Breakfast available</span></div>
+          <div><svg aria-hidden="true"><use href="#icon-waves"></use></svg><span>Swimming pool</span></div>
+          <div><svg aria-hidden="true"><use href="#icon-car"></use></svg><span>Airport transfer</span></div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container about-grid">
+          <div class="image-composition">
+            <img src="assets/images/pool-courtyard.png" alt="Peaceful pool courtyard surrounded by tropical plants">
+            <span class="image-note"><strong>12</strong> thoughtfully designed rooms</span>
+          </div>
+          <div class="section-copy">
+            <p class="eyebrow">Our story</p>
+            <h2>A quieter way to experience the coast.</h2>
+            <p class="lead">Cape Breeze is a fictional boutique retreat created around one simple idea: guests should feel connected to Cape Coast without giving up calm, comfort, or thoughtful service.</p>
+            <p>Natural textures, coastal colours, and locally inspired details shape every room. From here, the region&apos;s history, rainforest, beaches, and everyday energy are all within easy reach.</p>
+            <a class="text-link" href="#amenities">Discover the hotel <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rooms-section" id="rooms">
+        <div class="container">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow">Our rooms</p>
+            <h2>Stay somewhere worth remembering.</h2>
+            <p>Comfortable spaces with warm materials, generous light, and a relaxed coastal character.</p>
+          </div>
+
+          <div class="rooms-grid">
+            <article class="room-card">
+              <div class="room-image-wrap"><img src="assets/images/guest-room.png" alt="Standard Room at Cape Breeze Boutique Hotel"><span class="room-price">From GH₵ 680 / night</span></div>
+              <div class="room-body">
+                <p class="room-details"><svg aria-hidden="true"><use href="#icon-users"></use></svg>2 guests · Queen bed · Garden view</p>
+                <h3>Standard Room</h3>
+                <p>A calm, beautifully finished room designed for restful nights after exploring Cape Coast.</p>
+                <a class="text-link room-enquiry" href="#booking" data-room="Standard Room">Enquire about this room <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+
+            <article class="room-card">
+              <div class="room-image-wrap"><img src="assets/images/hotel-exterior.png" alt="Deluxe Ocean Room at Cape Breeze Boutique Hotel"><span class="room-price">From GH₵ 890 / night</span></div>
+              <div class="room-body">
+                <p class="room-details"><svg aria-hidden="true"><use href="#icon-users"></use></svg>2 guests · King bed · Ocean view</p>
+                <h3>Deluxe Ocean Room</h3>
+                <p>Extra space, thoughtful coastal details, and an open view toward the Atlantic horizon.</p>
+                <a class="text-link room-enquiry" href="#booking" data-room="Deluxe Ocean Room">Enquire about this room <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+
+            <article class="room-card">
+              <div class="room-image-wrap"><img src="assets/images/pool-courtyard.png" alt="Courtyard Suite at Cape Breeze Boutique Hotel"><span class="room-price">From GH₵ 1,180 / night</span></div>
+              <div class="room-body">
+                <p class="room-details"><svg aria-hidden="true"><use href="#icon-users"></use></svg>3 guests · King bed · Lounge</p>
+                <h3>Courtyard Suite</h3>
+                <p>A spacious suite near the quiet pool courtyard for guests who want room to slow down.</p>
+                <a class="text-link room-enquiry" href="#booking" data-room="Courtyard Suite">Enquire about this room <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+          </div>
+          <p class="demo-note">Room names and prices are demonstration content for this portfolio project.</p>
+        </div>
+      </section>
+
+      <section class="section amenities-section" id="amenities">
+        <div class="container amenities-layout">
+          <div class="section-heading amenities-intro">
+            <p class="eyebrow">Everything you need</p>
+            <h2>Easy comfort, from arrival to checkout.</h2>
+            <p>Useful amenities and attentive service keep the practical parts of your stay simple.</p>
+          </div>
+          <div class="amenities-grid">
+            <article class="amenity"><span class="icon-circle"><svg aria-hidden="true"><use href="#icon-waves"></use></svg></span><div><h3>Courtyard Pool</h3><p>A quiet tropical pool for slow afternoons.</p></div></article>
+            <article class="amenity"><span class="icon-circle"><svg aria-hidden="true"><use href="#icon-dining"></use></svg></span><div><h3>Coastal Dining</h3><p>Fresh Ghanaian and international favourites.</p></div></article>
+            <article class="amenity"><span class="icon-circle"><svg aria-hidden="true"><use href="#icon-wifi"></use></svg></span><div><h3>Reliable Wi-Fi</h3><p>Stay connected throughout the property.</p></div></article>
+            <article class="amenity"><span class="icon-circle"><svg aria-hidden="true"><use href="#icon-car"></use></svg></span><div><h3>Airport Transfer</h3><p>Pre-arranged transport for an easier arrival.</p></div></article>
+            <article class="amenity"><span class="icon-circle"><svg aria-hidden="true"><use href="#icon-clock"></use></svg></span><div><h3>24-Hour Reception</h3><p>A helpful team available throughout your stay.</p></div></article>
+            <article class="amenity"><span class="icon-circle"><svg aria-hidden="true"><use href="#icon-briefcase"></use></svg></span><div><h3>Business Ready</h3><p>Flexible spaces for meetings and focused work.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-banner" aria-label="Coastal hotel experience">
+        <img src="assets/images/hotel-exterior.png" alt="View across the coast beside Cape Breeze">
+        <div class="feature-overlay"></div>
+        <div class="feature-copy"><p class="eyebrow eyebrow-light">Your home by the coast</p><h2>Relax. Explore. Experience Ghana.</h2></div>
+      </section>
+
+      <section class="section destinations-section">
+        <div class="container">
+          <div class="section-heading split-heading">
+            <div><p class="eyebrow">Explore Cape Coast</p><h2>Step into stories, nature, and the sea.</h2></div>
+            <p>Cape Breeze gives guests a restful base for discovering some of the Central Region&apos;s most memorable places.</p>
+          </div>
+          <div class="destination-grid">
+            <article class="destination-card"><span>01</span><h3>Cape Coast Castle</h3><p>History along the shoreline</p></article>
+            <article class="destination-card"><span>02</span><h3>Kakum National Park</h3><p>Rainforest walks and canopy views</p></article>
+            <article class="destination-card"><span>03</span><h3>Elmina</h3><p>A historic coastal town nearby</p></article>
+            <article class="destination-card"><span>04</span><h3>Local Beaches</h3><p>Relaxed days beside the Atlantic</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="container">
+          <div class="section-heading centered-heading"><p class="eyebrow">A glimpse of Cape Breeze</p><h2>Space to settle in.</h2></div>
+          <div class="gallery-grid">
+            <figure class="gallery-large"><img src="assets/images/pool-courtyard.png" alt="Tropical courtyard swimming pool" loading="lazy"></figure>
+            <figure><img src="assets/images/guest-room.png" alt="Guest room with coastal details" loading="lazy"></figure>
+            <figure><img src="assets/images/hotel-exterior.png" alt="Hotel and Atlantic coast at sunset" loading="lazy"></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="container">
+          <div class="section-heading centered-heading"><p class="eyebrow">Guest experiences</p><h2>Warm stays, fond memories.</h2></div>
+          <div class="testimonials-grid">
+            <blockquote><div class="stars" aria-label="Five stars"><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg></div><p>“The calm atmosphere and thoughtful room design made our Cape Coast weekend feel genuinely special.”</p><footer><strong>Ama K.</strong><span>Accra</span></footer></blockquote>
+            <blockquote><div class="stars" aria-label="Five stars"><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg></div><p>“A comfortable base for exploring the region, with helpful service and a beautiful coastal setting.”</p><footer><strong>Daniel M.</strong><span>London</span></footer></blockquote>
+            <blockquote><div class="stars" aria-label="Five stars"><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg></div><p>“The pool courtyard was peaceful, the room felt warm, and everything we needed was easy to arrange.”</p><footer><strong>Esi A.</strong><span>Kumasi</span></footer></blockquote>
+          </div>
+          <p class="demo-note">Testimonials are fictional and shown only as demonstration content.</p>
+        </div>
+      </section>
+
+      <section class="section booking-section" id="booking">
+        <div class="container booking-grid">
+          <div class="booking-copy">
+            <p class="eyebrow">Plan your stay</p>
+            <h2>Ready for your Cape Coast getaway?</h2>
+            <p>Tell us what you have in mind and the hotel team would normally confirm availability and the final price.</p>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#icon-check"></use></svg>No payment required to enquire</li>
+              <li><svg aria-hidden="true"><use href="#icon-check"></use></svg>Flexible room options</li>
+              <li><svg aria-hidden="true"><use href="#icon-check"></use></svg>Personal reply from the hotel team</li>
+            </ul>
+          </div>
+
+          <form class="booking-form" id="bookingForm">
+            <div class="form-grid">
+              <label>Full name<input name="name" type="text" autocomplete="name" required></label>
+              <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+              <label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label>
+              <label>Guests<select name="guests"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4+ guests</option></select></label>
+              <label>Check-in<input id="checkin" name="checkin" type="date" required></label>
+              <label>Check-out<input id="checkout" name="checkout" type="date" required></label>
+              <label class="full-field">Room type<select id="roomType" name="room" required><option value="" selected disabled>Select a room</option><option>Standard Room</option><option>Deluxe Ocean Room</option><option>Courtyard Suite</option></select></label>
+              <label class="full-field">Message<textarea name="message" rows="4" placeholder="Tell us anything that would help us plan your stay."></textarea></label>
+            </div>
+            <button class="button form-button" type="submit">Send booking enquiry <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></button>
+            <p class="form-success" id="formSuccess" role="status" hidden><svg aria-hidden="true"><use href="#icon-check"></use></svg>Your form passed validation. This portfolio demo does not send a real reservation.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow eyebrow-light">Get in touch</p>
+            <h2>Start planning your stay.</h2>
+            <p class="contact-intro">Cape Breeze is a fictional hotel concept located broadly in Cape Coast for this portfolio demonstration.</p>
+            <div class="contact-list">
+              <p><svg aria-hidden="true"><use href="#icon-pin"></use></svg><span><strong>Location</strong>Cape Coast, Central Region, Ghana</span></p>
+              <p><svg aria-hidden="true"><use href="#icon-phone"></use></svg><span><strong>Telephone</strong>+233 00 000 0000</span></p>
+              <p><svg aria-hidden="true"><use href="#icon-mail"></use></svg><span><strong>Email</strong>stay@capebreeze.example</span></p>
+            </div>
+          </div>
+          <div class="map-card" aria-label="Cape Coast location illustration">
+            <span class="map-ring map-ring-one"></span><span class="map-ring map-ring-two"></span>
+            <svg aria-hidden="true"><use href="#icon-pin"></use></svg><strong>Cape Coast</strong><small>Central Region · Ghana</small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-mark">CB</span><span><strong>Cape Breeze</strong><small>Boutique Hotel</small></span></a><p>A warm, modern stay inspired by Ghana&apos;s beautiful coast.</p></div>
+        <div><h3>Explore</h3><a href="#rooms">Rooms</a><a href="#amenities">Amenities</a><a href="#gallery">Gallery</a><a href="#about">Our story</a></div>
+        <div><h3>Contact</h3><p>Cape Coast, Ghana</p><p>+233 00 000 0000</p><p>stay@capebreeze.example</p></div>
+        <div><h3>Follow</h3><p>Instagram</p><p>Facebook</p></div>
+      </div>
+      <div class="container footer-bottom"><p>© 2026 Cape Breeze Boutique Hotel.</p><p>Fictional portfolio demonstration project.</p></div>
+    </footer>
+  </body>
+</html>
