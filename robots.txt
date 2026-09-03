@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add the final sitemap URL after deployment.
+Sitemap: https://hotel-landing-page.patrickankomah4.workers.dev/sitemap.xml
