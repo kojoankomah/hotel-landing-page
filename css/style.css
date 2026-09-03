@@ -2,7 +2,7 @@
   --navy: #0d2d3f;
   --navy-light: #173f55;
   --gold: #c49a5a;
-  --gold-dark: #9d753b;
+  --gold-dark: #795525;
   --sand: #e8dcc8;
   --cream: #f8f6f1;
   --white: #ffffff;
@@ -617,7 +617,7 @@ button:focus-visible {
 
 .demo-note {
   margin: 2rem auto 0;
-  color: #7b8083;
+  color: #5f676c;
   font-size: 0.76rem;
   text-align: center;
 }
@@ -725,6 +725,10 @@ button:focus-visible {
 .destinations-section h2,
 .destinations-section h3 {
   color: var(--white);
+}
+
+.destinations-section .eyebrow {
+  color: #f2d39d;
 }
 
 .split-heading {
