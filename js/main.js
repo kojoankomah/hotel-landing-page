@@ -36,6 +36,9 @@ const checkinInput = document.querySelector("#checkin");
 const checkoutInput = document.querySelector("#checkout");
 const roomType = document.querySelector("#roomType");
 const formSuccess = document.querySelector("#formSuccess");
+const formError = document.querySelector("#formError");
+const submitButton = bookingForm.querySelector('button[type="submit"]');
+const submitButtonContent = submitButton.innerHTML;
 const roomEnquiryLinks = document.querySelectorAll(".room-enquiry");
 
 function toDateInputValue(date) {
@@ -81,9 +84,10 @@ roomEnquiryLinks.forEach((link) => {
 
 bookingForm.addEventListener("input", () => {
   formSuccess.hidden = true;
+  formError.hidden = true;
 });
 
-bookingForm.addEventListener("submit", (event) => {
+bookingForm.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   if (checkoutInput.value <= checkinInput.value) {
@@ -93,9 +97,37 @@ bookingForm.addEventListener("submit", (event) => {
   }
 
   checkoutInput.setCustomValidity("");
-  formSuccess.hidden = false;
-  bookingForm.reset();
-  checkinInput.min = today;
-  checkoutInput.min = tomorrowFrom(today);
-  formSuccess.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  formSuccess.hidden = true;
+  formError.hidden = true;
+
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending enquiry...";
+
+  try {
+    const response = await fetch(bookingForm.action, {
+      method: bookingForm.method,
+      body: new FormData(bookingForm),
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error("Form submission failed.");
+    }
+
+    bookingForm.reset();
+    checkinInput.min = today;
+    checkoutInput.min = tomorrowFrom(today);
+    formSuccess.hidden = false;
+    formSuccess.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  } catch (error) {
+    console.error(error);
+    formError.hidden = false;
+    formError.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  } finally {
+    submitButton.disabled = false;
+    submitButton.innerHTML = submitButtonContent;
+  }
 });
+

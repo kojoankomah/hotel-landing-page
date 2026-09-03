@@ -969,6 +969,31 @@ button:focus-visible {
   margin-top: 0.25rem;
 }
 
+
+.form-error {
+  margin: 1.2rem 0 0;
+  border-left: 3px solid #b54747;
+  background: #fff0f0;
+  color: #842d2d;
+  font-size: 0.82rem;
+  padding: 0.8rem 1rem;
+}
+
+.form-error[hidden] {
+  display: none;
+}
+
+.form-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.form-note {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 .contact-section {
   background: var(--navy-light);
   color: var(--white);
@@ -1155,6 +1180,20 @@ button:focus-visible {
 .footer-bottom p {
   margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1020px) {
   .menu-button {

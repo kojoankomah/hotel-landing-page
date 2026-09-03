@@ -223,7 +223,17 @@
             </ul>
           </div>
 
-          <form class="booking-form" id="bookingForm">
+          <form
+            class="booking-form"
+            id="bookingForm"
+            action="https://formspree.io/f/xwlkbnba"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Cape Breeze booking enquiry"
+            >
             <div class="form-grid">
               <label>Full name<input name="name" type="text" autocomplete="name" required></label>
               <label>Email address<input name="email" type="email" autocomplete="email" required></label>
@@ -234,9 +244,19 @@
               <label class="full-field">Room type<select id="roomType" name="room" required><option value="" selected disabled>Select a room</option><option>Standard Room</option><option>Deluxe Ocean Room</option><option>Courtyard Suite</option></select></label>
               <label class="full-field">Message<textarea name="message" rows="4" placeholder="Tell us anything that would help us plan your stay."></textarea></label>
             </div>
+            <p class="form-note">
+              Portfolio demonstration only—this form does not create a real hotel reservation.
+            </p>
             <button class="button form-button" type="submit">Send booking enquiry <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></button>
-            <p class="form-success" id="formSuccess" role="status" hidden><svg aria-hidden="true"><use href="#icon-check"></use></svg>Your form passed validation. This portfolio demo does not send a real reservation.</p>
-          </form>
+            <p class="form-success" id="formSuccess" role="status" hidden>
+              <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+              Thank you. Your booking enquiry has been sent successfully.
+            </p>
+
+            <p class="form-error" id="formError" role="alert" hidden>
+              We couldn’t send your enquiry. Please check your connection and try again.
+            </p> 
+           </form>
         </div>
       </section>
 
